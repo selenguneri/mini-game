@@ -4,7 +4,7 @@ let board = ['', '', '', '', '', '', '', '', ''];
 let currPlayer = '♡'; // change to icons maybe, for now 1 or 2
 let gameActive = true;
 let prevWinner = ''
-// icons : ♡ and ♢ 
+// icons : ♡ and ♢  
 
 const winningConditions = [
     [0, 1, 2],
