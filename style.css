@@ -1,0 +1,111 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* Container to limit size etc */
+.container {
+    width: 450px;
+    min-height: 300px;
+    background: #fff8dc;
+    text-align: center;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+h1 {
+    padding-bottom: 30px;
+}
+
+p {
+    font-size: larger;
+}
+
+/* The grid div */
+.grid {
+    display: grid;
+    border: 20px solid #a14eaf;
+    border-radius: 30px;
+    padding: 10px;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #a2d6bf;
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color:aliceblue;
+}
+
+.cell:hover {
+    background-color: #c0ffe3;
+    transform: scale(1.1);
+}
+
+.winning {
+    background-color: rgb(7, 99, 35);
+    transform: scale(1.15);
+    pointer-events: none;
+}
+
+.draw {
+    background-color:rgb(174, 149, 149);
+    pointer-events: none;
+}
+
+
+#resetButton {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #cc1470;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.winning-message {
+    /* display: none; */
+    display: flex;
+    z-index: 10000;
+    position: fixed;
+    background-color:white;
+    border: 10px solid green;
+    height: 250px;
+    width: 400px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.win-btn {
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
