@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hdyn</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="page-gift">
     <div>
         <img class="gift">
-        <button class="gift" id="gift-button">Click to un-blur!</button>
         <div class="gift" id="gift-msg">
-            <h4>Oops!</h4> 
+            <h4 class="gift-title">Test Text</h4> 
+            <img id="gift-img" src="media/623420_stock-photo-portrait-of-happy-old-man.jpg">
+            <button class="gift-btn" onclick="giftClick()">Click to unblur</button>
+            <p id="blur-msg">Unable to unblur!</p>
+            <button class="hint-btn" id ="hint-btn" onclick="hintClick()">Click for hint</button>
+            <div id="hint-popup">
+                <p class="hint" id="hint">Here:</p>
+                <img class="hint" id="hint-img" src="media/lion_icon.png">
+            </div>
         </div>
     </div>
-    <a href="index.html">Back to start</a>
+    <a id="back-btn" href="index.html">Başa dön</a>
+
+    <script src="script.js"></script>
 </body>
 </html>

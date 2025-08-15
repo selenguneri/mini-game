@@ -103,3 +103,35 @@ function heartsWon() {
     document.getElementById('winning-message').style.display = 'block';
     console.log('hearts won');
 }
+
+if (window.location.pathname.endsWith("page-msg.html")) {
+    growPics();
+}
+
+// MESSAGE PAGE
+function growPics() {
+    window.addEventListener('scroll', function() {
+        let pics = this.document.querySelectorAll("img");
+        let scrollPos = this.window.scrollY;
+
+        pics.forEach(pic => {
+            if (scrollPos > 200) {
+                pic.classList.add('grow');
+            }
+            else {
+                pic.classList.remove('grow');
+            }
+        })
+    })
+}
+
+
+// GIFT PAGE
+function giftClick() {
+    document.getElementById('blur-msg').style.display = 'flex';
+    document.getElementById('hint-btn').style.display = 'flex';
+}
+
+function hintClick() {
+    document.getElementById('hint-popup').style.display = 'block';
+}

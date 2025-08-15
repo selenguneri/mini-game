@@ -109,3 +109,135 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+/* MESSAGE */
+
+body#page-msg {
+    background-color: rgb(255, 234, 237);
+}
+
+.dg-msg {
+    color:rgb(7, 99, 35);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 75px;
+    margin: 350px;
+    margin-bottom: 100px;
+    padding: 50px;
+}
+
+.dg-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dg-prg {
+    color:rgb(0, 37, 0);
+    margin: 30px;
+}
+
+img {
+    width: 100px;
+    transition: transform 0.3s ease;
+    margin: 30px;
+}
+
+.grow {
+    transform: scale(1.5);
+}
+
+#big-img {
+    width: 300px;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.next-page-button {
+    margin:20px;
+    padding: 20px;
+}
+
+
+/* GIFT */
+body#page-gift {
+    background-color: rgb(255, 234, 237);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gift-title {
+    color:#65306e;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+#gift-img {
+    width: 500px;
+    margin: 15px;
+}
+
+#gift-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gift-btn {
+    align-self: center;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(251, 121, 140);
+}
+
+#blur-msg {
+    display: none;
+    margin: 15px;
+}
+
+#hint-btn {
+    display: none;
+    border: 2px solid purple;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#hint-popup {
+    display: none;
+    z-index: 10000;
+    position: absolute;
+    background-color:white;
+    border: 2px solid rgb(199, 164, 247);
+    border-radius: 15px;
+    justify-content: center;
+    flex-direction: column-reverse;
+    padding: 10px;
+    height: 150px;
+    width: auto;
+    background-color: #fae2fe;
+    margin: 30px;
+}
+
+#hint {
+    padding: 0;
+    margin: 0;
+}
+
+#hint-img {
+    position: static;
+    top: 0px;
+    right: 5px;
+    height: 50px;
+    width: auto;
+    z-index: auto;
+}
+
+.back-btn {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+}
