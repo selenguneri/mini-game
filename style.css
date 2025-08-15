@@ -87,8 +87,7 @@ p {
 
 
 .winning-message {
-    /* display: none; */
-    display: flex;
+    display: none;
     z-index: 10000;
     position: fixed;
     background-color:white;
@@ -117,6 +116,8 @@ body#page-msg {
 }
 
 .dg-msg {
+    position: relative;
+    top: 20px;
     color:rgb(7, 99, 35);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 75px;
@@ -146,6 +147,7 @@ img {
     transform: scale(1.5);
 }
 
+
 #big-img {
     width: 300px;
     justify-content: center;
@@ -154,8 +156,25 @@ img {
 }
 
 .next-page-button {
+    display: flex;
+    flex-direction: column;
     margin:20px;
     padding: 20px;
+    justify-content: center;
+}
+
+#gift-msg {
+    font-size: 30px;
+    margin: 5px;
+    color: #423e3e;
+}
+
+#next {
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
 }
 
 

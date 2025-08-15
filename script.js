@@ -100,10 +100,9 @@ function reset() {
 
 // CONGRATS
 function heartsWon() {
-    document.getElementById('winning-message').style.display = 'block';
+    document.getElementById('winning-message').style.display = 'flex';
     console.log('hearts won');
 }
-
 if (window.location.pathname.endsWith("page-msg.html")) {
     growPics();
 }
